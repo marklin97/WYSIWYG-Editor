@@ -1,0 +1,42 @@
+.MyEditor-container {
+  background: #fff;
+  border: 1px solid grey;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 2px;
+
+  padding: 10px 15px 100px;
+  margin-left: 25vw;
+  margin-top: 15vh;
+  box-shadow: inset 0px 1px 8px -3px #ababab;
+}
+.MyEditor-toolbar {
+  background: #fff;
+  border: 1px solid grey;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+}
+.MyEditor-blockToolbar {
+  background: #fff;
+  border: 1px solid grey;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+}
+
+.MyEditor-wordCounter {
+  margin-left: 34vw;
+  display: inline;
+  border-radius: 11rem;
+  padding: 8px 8px 8px 8px;
+  border: 1px solid grey;
+  opacity: 0.8;
+  user-select: none;
+}
+.MyEditor-bottomToolbar {
+  margin-left: 25vw;
+  margin-top: 10px;
+  width: 100%;
+}
