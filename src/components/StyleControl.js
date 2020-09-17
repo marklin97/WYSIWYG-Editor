@@ -29,6 +29,7 @@ const StyleControl = ({ editorState, onToggleInline, onToggleBlock }) => {
           key={button.style}
           onToggle={onToggleInline}
           style={button.style}
+          isStatic={true}
         />
       ))}
       {BlockStyle.map(button => (
@@ -38,6 +39,7 @@ const StyleControl = ({ editorState, onToggleInline, onToggleBlock }) => {
           key={button.style}
           onToggle={onToggleBlock}
           style={button.style}
+          isStatic={true}
         />
       ))}
       <FontSizeSelection onToggle={onToggleInline} />

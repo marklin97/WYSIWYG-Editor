@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import 'draft-js-emoji-plugin/lib/plugin.css'
 import 'draft-js-image-plugin/lib/plugin.css'
+import '../../node_modules/draft-js/dist/Draft.css'
 import { EditorState, getDefaultKeyBinding, RichUtils } from 'draft-js'
 import Editor from 'draft-js-plugins-editor'
 import StyleControl from './StyleControl'
+import InlineToolbar from './InlineToolbar'
 import styleMap from './styleMap'
 
 // import plugins
@@ -40,7 +42,7 @@ const MyEditor = () => {
 
   return (
     <div>
-      <div className='MyEditor-container'>
+      <div className='MyEditor-container' id='container'>
         <div className='MyEditor-toolbar'>
           <StyleControl
             editorState={editorState}
@@ -48,7 +50,10 @@ const MyEditor = () => {
             onToggleBlock={toggleBlockStyle}
           />
         </div>
-
+        <InlineToolbar
+          editorState={editorState}
+          onToggleInline={toggleInlineStyle}
+        />
         <Editor
           editorState={editorState}
           onChange={onChange}
