@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {log} from 'my-npm-package-sample'
 import 'draft-js-emoji-plugin/lib/plugin.css'
 import 'draft-js-image-plugin/lib/plugin.css'
 import '../../node_modules/draft-js/dist/Draft.css'
@@ -20,6 +21,7 @@ const { CharCounter } = counterPlugin
 const { EmojiSuggestions, EmojiSelect } = emojiPlugin
 
 const MyEditor = () => {
+  console.log(log)
   const [editorState, setEditorState] = useState(EditorState.createEmpty())
   const onChange = editorState => {
     setEditorState(editorState)
